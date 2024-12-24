@@ -91,7 +91,7 @@
                 @else
                     <div class="header-tools__item hover-container">
                         <a class="header-tools__item"
-                            href="{{ Auth::user()->utype == 'ADM' ? route('admin.index') : route('user.account.dashboard') }}">
+                            href="{{ Auth::user()->usertype == 'ADM' ? route('admin.index') : route('user.account.dashboard') }}">
                             <span class="pr-6px">{{ Auth::user()->name }}</span>
                             <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
